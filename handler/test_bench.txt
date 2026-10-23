@@ -1,0 +1,20 @@
+go test -run '^$' -bench . -benchmem -cpu=100,100
+00
+goos: linux
+goarch: amd64
+pkg: urlShortner/handler
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkShortenSequential/DefaultMap-100                 288136              4056 ns/op            8173 B/op         65 allocs/op
+BenchmarkShortenSequential/DefaultMap-10000               327739              6696 ns/op            8458 B/op         65 allocs/op
+BenchmarkShortenSequential/SyncMap-100                    301983              4292 ns/op            8163 B/op         68 allocs/op
+BenchmarkShortenSequential/SyncMap-10000                  300208              7098 ns/op            8468 B/op         68 allocs/op
+BenchmarkShortenParallel/DefaultMap-100                  1000000              1630 ns/op            8200 B/op         65 allocs/op
+BenchmarkShortenParallel/DefaultMap-10000                 864333              3633 ns/op            8286 B/op         65 allocs/op
+BenchmarkShortenParallel/SyncMap-100                     1000000              1379 ns/op            8171 B/op         68 allocs/op
+BenchmarkShortenParallel/SyncMap-10000                    893919              2557 ns/op            8223 B/op         68 allocs/op
+PASS
+ok      urlShortner/handler     19.680s
+
+go test -race
+PASS
+ok      urlShortner/handler     1.270s
