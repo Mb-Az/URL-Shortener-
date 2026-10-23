@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 	"testing"
-	mapstruct "urlShortner/mapStruct"
-	"urlShortner/shortner"
+	mapstruct "urlShortener/mapStruct"
+	"urlShortener/shortener"
 
 	"github.com/gin-gonic/gin"
 )

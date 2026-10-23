@@ -2,8 +2,8 @@ package handler
 
 import (
 	"net/http"
-	"urlShortner/mapInterface"
-	"urlShortner/shortner"
+	"urlShortener/mapInterface"
+	"urlShortener/shortener"
 
 	"github.com/gin-gonic/gin"
 )

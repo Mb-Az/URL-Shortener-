@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"runtime"
 	"time"
-	"urlShortner/handler"
-	mapstruct "urlShortner/mapStruct"
+	"urlShortener/handler"
+	mapstruct "urlShortener/mapStruct"
 
 	"github.com/gin-gonic/gin"
 )

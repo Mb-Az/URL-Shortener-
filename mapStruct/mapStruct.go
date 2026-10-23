@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"sync"
-	"urlShortner/mapInterface"
+	"urlShortener/mapInterface"
 )
 
 type MapS struct {
